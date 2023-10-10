@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04 - Local Server</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+  <body>
+    <!-- Canvas -->
+    <canvas class="webgl"></canvas>
+    <!-- Front #1 -->
+    <div
+      id="front-1"
+      class="container-fluid position-relative vh-100 d-flex justify-content-center align-items-center"
+      style="pointer-events: none"
+    >
+      <div class="row w-100 px-5 px-5 text-container">
+        <div class="col-12 col-lg-6 py-5">
+          <h1 class="display-5 text-custom fw-bolder">
+            Design is the method of putting form and content together
+          </h1>
+          <p class="text-light fw-light paragraph-custom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptate sapiente tenetur explicabo magnam magni molestiae, fugiat,
+            saepe quos facere, maiores eum aliquid natus asperiores dolores
+            eveniet ipsam laborum nihil.
+          </p>
+          <a
+            id="to-bottom-1"
+            class="btn btn-custom text-lowercase rounded-0 px-5 border-0"
+            href="#front-2"
+            role="button"
+            style="pointer-events: all"
+            >Vai oltre</a
+          >
+        </div>
+        <div class="col-6"></div>
+      </div>
+    </div>
+
+    <!-- Front #2 -->
+    <div
+      id="front-2"
+      class="container-fluid position-relative vh-100 d-flex justify-content-center align-items-center"
+      style="pointer-events: none"
+    >
+      <div class="row w-100 px-5 px-5 text-container">
+        <div class="col-12 col-lg-6 py-5">
+          <h1 class="display-1 text-custom text-uppercase fw-bolder">
+            Titolo di prova
+          </h1>
+          <p class="text-light fw-light paragraph-custom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptate sapiente tenetur explicabo magnam magni molestiae, fugiat,
+            saepe quos facere, maiores eum aliquid natus asperiores dolores
+            eveniet ipsam laborum nihil.
+          </p>
+          <a
+            id="to-bottom-2"
+            class="btn btn-custom text-lowercase rounded-0 px-5 border-0"
+            href="#front-3"
+            role="button"
+            style="pointer-events: all"
+            >Vai oltre</a
+          >
+          <a
+            id="to-top-1"
+            class="btn btn-custom text-lowercase rounded-0 px-5 border-0"
+            href="#front-1"
+            role="button"
+            style="pointer-events: all"
+            >Retrocedi</a
+          >
+        </div>
+        <div class="col-6"></div>
+      </div>
+    </div>
+
+    <!-- Front #3 -->
+    <div
+      id="front-3"
+      class="container-fluid position-relative vh-100 d-flex justify-content-center align-items-center"
+      style="pointer-events: none"
+    >
+      <div class="row w-100 px-5 px-5 text-container">
+        <div class="col-12 col-lg-6 py-5">
+          <h1 class="display-1 text-custom text-uppercase fw-bolder">
+            Titolo di prova
+          </h1>
+          <p class="text-light fw-light paragraph-custom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            voluptate sapiente tenetur explicabo magnam magni molestiae, fugiat,
+            saepe quos facere, maiores eum aliquid natus asperiores dolores
+            eveniet ipsam laborum nihil.
+          </p>
+          <a
+            id="to-top-2"
+            class="btn btn-custom text-lowercase rounded-0 px-5 border-0"
+            href="#front-2"
+            role="button"
+            style="pointer-events: all"
+            >Retrocedi</a
+          >
+        </div>
+        <div class="col-6"></div>
+      </div>
+    </div>
+
+    <!-- Back -->
+    <div
+      class="container-fluid position-fixed top-0 vh-100 d-flex justify-content-center align-items-center border border-white border-5 large-pl decoration-gradient"
+      style="pointer-events: none; z-index: -99"
+    >
+      <div
+        class="row w-100 px-5 vh-70-vw background-border position-relative back-decoration"
+      >
+        <span
+          class="background-border-left-top border-height"
+          style="height: 10vh"
+        ></span>
+        <span
+          class="background-border-left-bottom border-height"
+          style="height: 10vh"
+        ></span>
+      </div>
+    </div>
+    <script type="module" src="./3d-script.js"></script>
+    <script type="module" src="./main-script.js"></script>
+  </body>
+</html>

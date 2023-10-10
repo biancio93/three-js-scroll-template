@@ -1,0 +1,110 @@
+/* ======================================================
+Import all of Bootstrap's CSS
+====================================================== */
+@import "~bootstrap/scss/bootstrap";
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Merriweather', serif;
+}
+*{
+    font-family: 'Lora', serif;
+}
+
+/* ======================================================
+STYLE THREE.JS
+====================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #092c26;
+    overflow: hidden;
+}
+
+.webgl{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+/* ======================================================
+BACKGROUND
+====================================================== */
+.vh-70-vw{
+min-height: 70vh;
+}
+
+.background-border{
+    border-top: 10px solid #ffffff08;
+    border-bottom: 10px solid #ffffff08;
+    border-right: 10px solid #ffffff08;
+}
+
+.background-border-left-top{
+    content: '';
+    position: absolute;
+    padding: 0;
+    top:0;
+    left:0;
+    width: 10px;
+    background-color: #ffffff08;
+}
+
+.background-border-left-bottom{
+    content: '';
+    position: absolute;
+    padding: 0;
+    bottom:0;
+    left:0;
+    width: 10px;
+    background-color: #ffffff08;
+}
+
+.decoration-gradient{
+    transition: 0.5s ease-in-out;
+    background-image: radial-gradient(circle at 50% 50%, rgba(9, 44, 38, 0) 20%, rgba(0, 15, 12, 0.4) 30%, rgba(9, 44, 38, 0) 50%, rgba(0, 15, 12, 0.4) 90%);
+}
+.decoration-gradient {
+    transition: 0.5s ease-in-out;
+    background-image: radial-gradient(circle at 100% 0%, rgba(9, 44, 38, 0) 20%, rgba(0, 15, 12, 0.4) 30%, rgba(9, 44, 38, 0) 50%, rgba(0, 15, 12, 0.4) 90%);
+}
+
+/* ======================================================
+PADDING E MARGIN
+====================================================== */
+.large-pl{
+padding-left:15vw;
+padding-right:15vw;
+}
+
+/* ======================================================
+TEXT COLOR CUSTOMIZATION
+====================================================== */
+.text-custom {
+    --bs-text-opacity: 0.3;
+    color: #385e57!important;
+    opacity: 0.3;
+    text-shadow: 2px 4px 8px #0f1815;
+}
+.paragraph-custom {
+    color: #385e57!important;
+    opacity: 0.5;
+}
+
+/* ======================================================
+BUTTON COLOR
+====================================================== */
+.btn-custom{
+    letter-spacing: 3px;
+    background-color: #173b35;
+    color: #439b8c;
+}
+.btn-custom:hover{
+    letter-spacing: 3px;
+    background-color: #173b35;
+    color: #439b8c;
+}
